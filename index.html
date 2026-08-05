@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クラウドソリューション | NextTech Inc.</title>
+  <style>
+    /* モダンで洗練されたシンプルなデザインCSS */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+    header { background: #fff; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .logo { font-size: 20px; font-weight: bold; color: #0052cc; }
+    .hero { background: linear-gradient(135deg, #0052cc 0%, #002966 100%); color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 36px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; opacity: 0.9; }
+    .btn { display: inline-block; background: #ffab00; color: #172b4d; padding: 14px 32px; font-weight: bold; border-radius: 4px; text-decoration: none; transition: 0.2s; }
+    .btn:hover { background: #ff9900; }
+    .section { padding: 60px 10%; max-width: 1000px; margin: 0 auto; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .card h3 { color: #0052cc; margin-bottom: 10px; }
+    .form-container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-top: 40px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-weight: bold; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+    .form-submit { width: 100%; background: #0052cc; color: #fff; padding: 14px; border: none; font-size: 18px; font-weight: bold; border-radius: 4px; cursor: pointer; }
+    .form-submit:hover { background: #003d99; }
+    footer { text-align: center; padding: 30px; background: #172b4d; color: #8993a4; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">NextTech Cloud</div>
+    <a href="#contact" class="btn" style="padding: 8px 16px; font-size: 14px;">お問い合わせ</a>
+  </header>
+
+  <section class="hero">
+    <h1>ビジネスの成長を加速させる<br>次世代クラウドプラットフォーム</h1>
+    <p>AIを活用したデータ分析と高いセキュリティで、業務効率化を実現します。</p>
+    <a href="#contact" class="btn">無料資料をリクエストする</a>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align: center;">NextTechが選ばれる3つの理由</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>1. 高度なAI自動化</h3>
+        <p>業務プロセスをAIが学習し、日常的なタスクを最大80%削減します。</p>
+      </div>
+      <div class="card">
+        <h3>2. 堅牢なセキュリティ</h3>
+        <p>エンタープライズレベルの暗号化とアクセス制御で重要なデータを保護します。</p>
+      </div>
+      <div class="card">
+        <h3>3. 柔軟な外部連携</h3>
+        <p>既存のCRMやSFAツールとスムーズに連携し、データを統合管理します。</p>
+      </div>
+    </div>
+
+    <!-- お問い合わせ・資料請求フォーム（今後のコンバージョン計測テスト用） -->
+    <div class="form-container" id="contact">
+      <h2 style="text-align: center; margin-bottom: 20px;">資料請求・お問い合わせ</h2>
+      <form id="leadForm" onsubmit="event.preventDefault(); alert('送信が完了しました（テスト）');">
+        <div class="form-group">
+          <label for="name">お名前</label>
+          <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+        </div>
+        <div class="form-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" placeholder="example@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="company">会社名</label>
+          <input type="text" id="company" name="company" placeholder="株式会社NextTech">
+        </div>
+        <!-- 今後GCLIDなどを格納するための隠しフィールド（hidden field） -->
+        <input type="hidden" id="gclid" name="gclid" value="">
+        <button type="submit" class="form-submit">無料で資料をダウンロード</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 NextTech Inc. All rights reserved.
+  </footer>
+
+</body>
+</html>
