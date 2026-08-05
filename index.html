@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) - CDNプロキシ（Cloudflare Workers）経由 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-44GG6TVQ6P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
-    gtag('config', 'G-44GG6TVQ6P');
+    // transport_url を追加してCloudflare Workerへ送信先を変更
+    gtag('config', 'G-44GG6TVQ6P', {
+      'transport_url': 'https://ga-proxy.gtg-sandbox.workers.dev'
+    });
   </script>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-44GG6TVQ6P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-44GG6TVQ6P');
+  </script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>クラウドソリューション | NextTech Inc.</title>
