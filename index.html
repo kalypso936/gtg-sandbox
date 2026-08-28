@@ -70,7 +70,10 @@
     </div>
 
     <!-- お問い合わせ・資料請求フォーム（今後のコンバージョン計測テスト用） -->
-    <div class="form-container" id="contact">
+    <div class="form-container" id="contact" style="position: relative;">
+      <!-- テスト入力自動化ボタン -->
+      <button type="button" onclick="fillDummyData()" style="position: absolute; top: 20px; right: 20px; background: #e9ecef; border: 1px solid #ced4da; padding: 6px 12px; border-radius: 4px; font-size: 12px; cursor: pointer; color: #495057;">⚡ テスト入力</button>
+      
       <h2 style="text-align: center; margin-bottom: 20px;">資料請求・お問い合わせ</h2>
       <form id="leadForm" onsubmit="event.preventDefault(); window.location.href='thanks.html';">
         <div class="form-group">
@@ -96,5 +99,23 @@
     &copy; 2026 NextTech Inc. All rights reserved.
   </footer>
 
+  <!-- ダミーデータ生成スクリプト -->
+  <script>
+    function fillDummyData() {
+      const names = ['山田 太郎', '佐藤 花子', '鈴木 一郎', '田中 誠', '伊藤 結衣'];
+      const companies = ['株式会社テクノ', 'クラウドソリューションズ合同会社', 'Next IT株式会社', '株式会社フューチャー', 'イノベーションネット株式会社'];
+      
+      // ランダム値の生成
+      const randomName = names[Math.floor(Math.random() * names.length)];
+      const randomCompany = companies[Math.floor(Math.random() * companies.length)];
+      // タイムスタンプを使ってユニークなメアドを生成
+      const randomEmail = 'test' + new Date().getTime() + '@example.com';
+
+      // フォームに値をセット
+      document.getElementById('name').value = randomName;
+      document.getElementById('email').value = randomEmail;
+      document.getElementById('company').value = randomCompany;
+    }
+  </script>
 </body>
 </html>
