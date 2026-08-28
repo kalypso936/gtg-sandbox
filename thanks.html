@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Cloudflareの「Set up tag (自動挿入)」がONの場合は、ここに自動でタグが入ります -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>資料請求完了 | NextTech Inc.</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+    header { background: #fff; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .logo { font-size: 20px; font-weight: bold; color: #0052cc; text-decoration: none; }
+    .section { padding: 80px 10%; max-width: 800px; margin: 0 auto; text-align: center; }
+    .thanks-card { background: #fff; padding: 50px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .thanks-card h1 { color: #0052cc; margin-bottom: 20px; font-size: 28px; }
+    .thanks-card p { font-size: 16px; margin-bottom: 30px; color: #555; }
+    .btn { display: inline-block; background: #ffab00; color: #172b4d; padding: 14px 32px; font-weight: bold; border-radius: 4px; text-decoration: none; transition: 0.2s; }
+    .btn:hover { background: #ff9900; }
+    footer { text-align: center; padding: 30px; background: #172b4d; color: #8993a4; font-size: 14px; position: absolute; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">NextTech Cloud</a>
+  </header>
+
+  <section class="section">
+    <div class="thanks-card">
+      <h1>お問い合わせ・資料請求<br>ありがとうございました</h1>
+      <p>ご入力いただいたメールアドレス宛に、資料のダウンロードリンクを送信いたしました。<br>内容を確認の上、担当者より順次ご連絡させていただきます。</p>
+      <a href="index.html" class="btn">トップページへ戻る</a>
+    </div>
+  </section>
+
+  <!-- フッターを画面下部に固定するための簡単なスタイル調整 -->
+  <script>
+    if (document.body.clientHeight < window.innerHeight) {
+      document.body.style.minHeight = '100vh';
+      document.body.style.position = 'relative';
+      document.querySelector('footer').style.position = 'absolute';
+    }
+  </script>
+</body>
+</html>
