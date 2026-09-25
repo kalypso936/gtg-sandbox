@@ -35,22 +35,6 @@
     <div class="thanks-card">
       <h1>お問い合わせ・資料請求<br>ありがとうございました</h1>
       <p>ご入力いただいたメールアドレス宛に、資料のダウンロードリンクを送信いたしました。<br>内容を確認の上、担当者より順次ご連絡させていただきます。</p>
-      <div style="margin-bottom: 28px; padding: 12px 18px; background: #f1f5f9; border-radius: 6px; display: inline-block;">
-        <span style="font-size: 14px; color: #475569;">送付先メールアドレス：</span>
-        <span id="email" style="font-weight: bold; color: #0052cc; font-size: 14px;"></span>
-      </div>
-      <script>
-        (function() {
-          var savedEmail = sessionStorage.getItem('ec_email') || 'taro.yamada@example.com';
-          var el = document.getElementById('email');
-          if (el) {
-            el.textContent = savedEmail;
-            el.value = savedEmail;
-            el.setAttribute('value', savedEmail);
-          }
-        })();
-      </script>
-      <br>
       <a href="index.html" class="btn">トップページへ戻る</a>
     </div>
   </section>
