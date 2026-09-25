@@ -118,6 +118,10 @@
     window.addEventListener('submit', function(event) {
       if (event.target && event.target.id === 'leadForm') {
         event.preventDefault();
+        var emailInput = document.getElementById('email');
+        if (emailInput && emailInput.value) {
+          sessionStorage.setItem('ec_email', emailInput.value);
+        }
         setTimeout(function() {
           window.location.href = 'thanks.html';
         }, 500);
