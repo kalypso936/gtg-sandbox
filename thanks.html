@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- フォームで入力されたメールアドレスを dataLayer に格納（拡張コンバージョン用） -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    var savedEmail = sessionStorage.getItem('user_email');
-    if (savedEmail) {
-      window.dataLayer.push({ 'user_email': savedEmail });
-    }
-  </script>
-  <!-- Google Tag Manager (Pattern 1: 3P Direct - googletagmanager.com) -->
+ <!-- Google Tag Manager (Pattern 1: 3P Direct - googletagmanager.com) -->
  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;

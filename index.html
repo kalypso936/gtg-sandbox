@@ -71,7 +71,7 @@
       <button type="button" onclick="fillDummyData()" style="position: absolute; top: 20px; right: 20px; background: #e9ecef; border: 1px solid #ced4da; padding: 6px 12px; border-radius: 4px; font-size: 12px; cursor: pointer; color: #495057;">⚡ テスト入力</button>
       
       <h2 style="text-align: center; margin-bottom: 20px;">資料請求・お問い合わせ</h2>
-      <form id="leadForm" onsubmit="event.preventDefault(); sessionStorage.setItem('user_email', document.getElementById('email').value); window.location.href='thanks.html';">
+      <form id="leadForm" onsubmit="event.preventDefault(); window.location.href='thanks.html';">
         <div class="form-group">
           <label for="name">お名前</label>
           <input type="text" id="name" name="name" placeholder="山田 太郎" required>
